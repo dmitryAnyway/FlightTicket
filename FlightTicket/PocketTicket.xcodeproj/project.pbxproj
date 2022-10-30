@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */; };
+		68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D5A290D530E004D7FAB /* FlightNumberView.swift */; };
+		68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1D5C290D5310004D7FAB /* Assets.xcassets */; };
+		68CA1D60290D5310004D7FAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1D5F290D5310004D7FAB /* Preview Assets.xcassets */; };
+		68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D61290D5310004D7FAB /* Persistence.swift */; };
+		68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D63290D5310004D7FAB /* PocketTicket.xcdatamodeld */; };
+		68CA1D6F290D5311004D7FAB /* PocketTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D6E290D5311004D7FAB /* PocketTicketTests.swift */; };
+		68CA1D79290D5311004D7FAB /* PocketTicketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D78290D5311004D7FAB /* PocketTicketUITests.swift */; };
+		68CA1D7B290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D7A290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift */; };
+		68CA1D8E290D5565004D7FAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 68CA1D8D290D5565004D7FAB /* Alamofire */; };
+		68CA1D94290D7ED9004D7FAB /* FlightNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D93290D7ED9004D7FAB /* FlightNumberViewModel.swift */; };
+		68CA1D98290DBBFB004D7FAB /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D97290DBBFB004D7FAB /* DIContainer.swift */; };
+		68CA1D9B290DBC1D004D7FAB /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 68CA1D9A290DBC1D004D7FAB /* Swinject */; };
+		68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */; };
+		68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CA1D6B290D5311004D7FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CA1D4D290D530E004D7FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CA1D54290D530E004D7FAB;
+			remoteInfo = PocketTicket;
+		};
+		68CA1D75290D5311004D7FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CA1D4D290D530E004D7FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CA1D54290D530E004D7FAB;
+			remoteInfo = PocketTicket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68CA1D55290D530E004D7FAB /* PocketTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTicketApp.swift; sourceTree = "<group>"; };
+		68CA1D5A290D530E004D7FAB /* FlightNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberView.swift; sourceTree = "<group>"; };
+		68CA1D5C290D5310004D7FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68CA1D5F290D5310004D7FAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68CA1D61290D5310004D7FAB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		68CA1D64290D5310004D7FAB /* PocketTicket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketTicket.xcdatamodel; sourceTree = "<group>"; };
+		68CA1D6A290D5311004D7FAB /* PocketTicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketTicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CA1D6E290D5311004D7FAB /* PocketTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTicketTests.swift; sourceTree = "<group>"; };
+		68CA1D74290D5311004D7FAB /* PocketTicketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketTicketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CA1D78290D5311004D7FAB /* PocketTicketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTicketUITests.swift; sourceTree = "<group>"; };
+		68CA1D7A290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTicketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68CA1D93290D7ED9004D7FAB /* FlightNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberViewModel.swift; sourceTree = "<group>"; };
+		68CA1D97290DBBFB004D7FAB /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberAssembly.swift; sourceTree = "<group>"; };
+		68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CA1D52290D530E004D7FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CA1D8E290D5565004D7FAB /* Alamofire in Frameworks */,
+				68CA1D9B290DBC1D004D7FAB /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D67290D5311004D7FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D71290D5311004D7FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68CA1D4C290D530E004D7FAB = {
+			isa = PBXGroup;
+			children = (
+				68CA1D57290D530E004D7FAB /* PocketTicket */,
+				68CA1D6D290D5311004D7FAB /* PocketTicketTests */,
+				68CA1D77290D5311004D7FAB /* PocketTicketUITests */,
+				68CA1D56290D530E004D7FAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CA1D56290D530E004D7FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D55290D530E004D7FAB /* PocketTicket.app */,
+				68CA1D6A290D5311004D7FAB /* PocketTicketTests.xctest */,
+				68CA1D74290D5311004D7FAB /* PocketTicketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CA1D57290D530E004D7FAB /* PocketTicket */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */,
+				68CA1D92290D7D64004D7FAB /* DI */,
+				68CA1D9E290DC666004D7FAB /* Services */,
+				68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */,
+				68CA1D90290D558A004D7FAB /* CoreData */,
+				68CA1D8F290D5574004D7FAB /* Resources */,
+				68CA1D5E290D5310004D7FAB /* Preview Content */,
+			);
+			path = PocketTicket;
+			sourceTree = "<group>";
+		};
+		68CA1D5E290D5310004D7FAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D5F290D5310004D7FAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68CA1D6D290D5311004D7FAB /* PocketTicketTests */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D6E290D5311004D7FAB /* PocketTicketTests.swift */,
+			);
+			path = PocketTicketTests;
+			sourceTree = "<group>";
+		};
+		68CA1D77290D5311004D7FAB /* PocketTicketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D78290D5311004D7FAB /* PocketTicketUITests.swift */,
+				68CA1D7A290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift */,
+			);
+			path = PocketTicketUITests;
+			sourceTree = "<group>";
+		};
+		68CA1D8F290D5574004D7FAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D5C290D5310004D7FAB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68CA1D90290D558A004D7FAB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D61290D5310004D7FAB /* Persistence.swift */,
+				68CA1D63290D5310004D7FAB /* PocketTicket.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D5A290D530E004D7FAB /* FlightNumberView.swift */,
+				68CA1D93290D7ED9004D7FAB /* FlightNumberViewModel.swift */,
+				68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */,
+			);
+			path = FlightNumberModule3;
+			sourceTree = "<group>";
+		};
+		68CA1D92290D7D64004D7FAB /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D97290DBBFB004D7FAB /* DIContainer.swift */,
+				68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		68CA1D9E290DC666004D7FAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CA1D54290D530E004D7FAB /* PocketTicket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CA1D7E290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicket" */;
+			buildPhases = (
+				68CA1D51290D530E004D7FAB /* Sources */,
+				68CA1D52290D530E004D7FAB /* Frameworks */,
+				68CA1D53290D530E004D7FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketTicket;
+			packageProductDependencies = (
+				68CA1D8D290D5565004D7FAB /* Alamofire */,
+				68CA1D9A290DBC1D004D7FAB /* Swinject */,
+			);
+			productName = PocketTicket;
+			productReference = 68CA1D55290D530E004D7FAB /* PocketTicket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68CA1D69290D5311004D7FAB /* PocketTicketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CA1D81290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketTests" */;
+			buildPhases = (
+				68CA1D66290D5311004D7FAB /* Sources */,
+				68CA1D67290D5311004D7FAB /* Frameworks */,
+				68CA1D68290D5311004D7FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CA1D6C290D5311004D7FAB /* PBXTargetDependency */,
+			);
+			name = PocketTicketTests;
+			productName = PocketTicketTests;
+			productReference = 68CA1D6A290D5311004D7FAB /* PocketTicketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68CA1D73290D5311004D7FAB /* PocketTicketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CA1D84290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketUITests" */;
+			buildPhases = (
+				68CA1D70290D5311004D7FAB /* Sources */,
+				68CA1D71290D5311004D7FAB /* Frameworks */,
+				68CA1D72290D5311004D7FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CA1D76290D5311004D7FAB /* PBXTargetDependency */,
+			);
+			name = PocketTicketUITests;
+			productName = PocketTicketUITests;
+			productReference = 68CA1D74290D5311004D7FAB /* PocketTicketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CA1D4D290D530E004D7FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					68CA1D54290D530E004D7FAB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					68CA1D69290D5311004D7FAB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 68CA1D54290D530E004D7FAB;
+					};
+					68CA1D73290D5311004D7FAB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 68CA1D54290D530E004D7FAB;
+					};
+				};
+			};
+			buildConfigurationList = 68CA1D50290D530E004D7FAB /* Build configuration list for PBXProject "PocketTicket" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68CA1D4C290D530E004D7FAB;
+			packageReferences = (
+				68CA1D8C290D5565004D7FAB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				68CA1D99290DBC1D004D7FAB /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			productRefGroup = 68CA1D56290D530E004D7FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CA1D54290D530E004D7FAB /* PocketTicket */,
+				68CA1D69290D5311004D7FAB /* PocketTicketTests */,
+				68CA1D73290D5311004D7FAB /* PocketTicketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CA1D53290D530E004D7FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CA1D60290D5310004D7FAB /* Preview Assets.xcassets in Resources */,
+				68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D68290D5311004D7FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D72290D5311004D7FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CA1D51290D530E004D7FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CA1D98290DBBFB004D7FAB /* DIContainer.swift in Sources */,
+				68CA1D94290D7ED9004D7FAB /* FlightNumberViewModel.swift in Sources */,
+				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
+				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
+				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
+				68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */,
+				68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */,
+				68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D66290D5311004D7FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CA1D6F290D5311004D7FAB /* PocketTicketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CA1D70290D5311004D7FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CA1D7B290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift in Sources */,
+				68CA1D79290D5311004D7FAB /* PocketTicketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68CA1D6C290D5311004D7FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CA1D54290D530E004D7FAB /* PocketTicket */;
+			targetProxy = 68CA1D6B290D5311004D7FAB /* PBXContainerItemProxy */;
+		};
+		68CA1D76290D5311004D7FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CA1D54290D530E004D7FAB /* PocketTicket */;
+			targetProxy = 68CA1D75290D5311004D7FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68CA1D7C290D5311004D7FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68CA1D7D290D5311004D7FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CA1D7F290D5311004D7FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68CA1D80290D5311004D7FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68CA1D82290D5311004D7FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketTicket.app/PocketTicket";
+			};
+			name = Debug;
+		};
+		68CA1D83290D5311004D7FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketTicket.app/PocketTicket";
+			};
+			name = Release;
+		};
+		68CA1D85290D5311004D7FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketTicket;
+			};
+			name = Debug;
+		};
+		68CA1D86290D5311004D7FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketTicket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CA1D50290D530E004D7FAB /* Build configuration list for PBXProject "PocketTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA1D7C290D5311004D7FAB /* Debug */,
+				68CA1D7D290D5311004D7FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CA1D7E290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA1D7F290D5311004D7FAB /* Debug */,
+				68CA1D80290D5311004D7FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CA1D81290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA1D82290D5311004D7FAB /* Debug */,
+				68CA1D83290D5311004D7FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CA1D84290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA1D85290D5311004D7FAB /* Debug */,
+				68CA1D86290D5311004D7FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68CA1D8C290D5565004D7FAB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		68CA1D99290DBC1D004D7FAB /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68CA1D8D290D5565004D7FAB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68CA1D8C290D5565004D7FAB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		68CA1D9A290DBC1D004D7FAB /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68CA1D99290DBC1D004D7FAB /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		68CA1D63290D5310004D7FAB /* PocketTicket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68CA1D64290D5310004D7FAB /* PocketTicket.xcdatamodel */,
+			);
+			currentVersion = 68CA1D64290D5310004D7FAB /* PocketTicket.xcdatamodel */;
+			path = PocketTicket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 68CA1D4D290D530E004D7FAB /* Project object */;
+}
