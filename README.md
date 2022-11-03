@@ -4,7 +4,7 @@
 Вместе с командой опытных разработчиков, будем показывать Вам актуальную информацию по вылету, сообщать о задержках рейсов
 
 ## Скрины
-![](https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/View02.jpf)
+![](https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-11-03%20%D0%B2%2011.16.15.png)
 
 ## Как это работает:
 в специальное поле вносится номер рейса и отслеживаете 
