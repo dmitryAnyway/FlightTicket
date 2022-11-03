@@ -11,6 +11,6 @@ struct FlightNumberView: View {
     @ObservedObject private(set) var viewModel: FlightNumberViewModel
 
     var body: some View {
-            Text("TEXT")
+        Text("Text")
     }
 }

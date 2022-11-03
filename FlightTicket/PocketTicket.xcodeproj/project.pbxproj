@@ -22,6 +22,9 @@
 		68CA1D9B290DBC1D004D7FAB /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 68CA1D9A290DBC1D004D7FAB /* Swinject */; };
 		68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */; };
 		68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */; };
+		B45001042914372A00E53584 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45001032914372A00E53584 /* Extension + String.swift */; };
+		B450010E29143BCB00E53584 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B450011029143BCB00E53584 /* Localizable.strings */; };
+		B450011329145A2D00E53584 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B450011229145A2D00E53584 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		68CA1D97290DBBFB004D7FAB /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberAssembly.swift; sourceTree = "<group>"; };
 		68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectWrapper.swift; sourceTree = "<group>"; };
+		B45001032914372A00E53584 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		B450010F29143BCB00E53584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B450011129143C3600E53584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B450011229145A2D00E53584 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +97,8 @@
 		68CA1D4C290D530E004D7FAB = {
 			isa = PBXGroup;
 			children = (
+				B450011229145A2D00E53584 /* .gitignore */,
+				B45001022914369700E53584 /* Localization */,
 				68CA1D57290D530E004D7FAB /* PocketTicket */,
 				68CA1D6D290D5311004D7FAB /* PocketTicketTests */,
 				68CA1D77290D5311004D7FAB /* PocketTicketUITests */,
@@ -189,6 +198,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B45001022914369700E53584 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B45001032914372A00E53584 /* Extension + String.swift */,
+				B450011029143BCB00E53584 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +297,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 68CA1D4C290D530E004D7FAB;
 			packageReferences = (
@@ -301,7 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B450011329145A2D00E53584 /* .gitignore in Resources */,
 				68CA1D60290D5310004D7FAB /* Preview Assets.xcassets in Resources */,
+				B450010E29143BCB00E53584 /* Localizable.strings in Resources */,
 				68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +353,7 @@
 				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
 				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
 				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
+				B45001042914372A00E53584 /* Extension + String.swift in Sources */,
 				68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */,
 				68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */,
 				68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */,
@@ -370,11 +392,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		B450011029143BCB00E53584 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B450010F29143BCB00E53584 /* en */,
+				B450011129143C3600E53584 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		68CA1D7C290D5311004D7FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -436,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
