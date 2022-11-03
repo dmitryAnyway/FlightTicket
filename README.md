@@ -4,13 +4,13 @@
 Вместе с командой опытных разработчиков, будем показывать Вам актуальную информацию по вылету, сообщать о задержках рейсов
 
 ## Скрины
-![](https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-11-03%20%D0%B2%2011.16.15.png)
+<img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg.jpg" style="width: 150px"> <img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg-2.jpg" style="width: 150px"> <img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg-3.jpg" style="width: 150px"> <img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg-4.jpg" style="width: 150px"> <img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg-5.jpg" style="width: 150px"> <img src="https://github.com/VasyaOne/ScrenTicket/blob/main/ScreenForReadme/2022%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F%20jpg-6.jpg" style="width: 150px"> 
 
 ## Как это работает:
 в специальное поле вносится номер рейса и отслеживаете 
 
 ## Технологии
-Приложение написано на языке ***Swift***
+Приложение написано на языке ***Swift***.
 Так же использованы технологии реактивного программирования: 
 - Combaine
 - Rx
