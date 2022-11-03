@@ -19,7 +19,7 @@
 ```
 
 ## Скрины
-![](https://disk.yandex.ru/i/Y_Ft8jOGbI65pw)
+![](<image src="https://disk.yandex.ru/i/Y_Ft8jOGbI65pw"></image>)
 ## Как это работает:
 в специальное поле вносится номер рейса и отслеживаете 
 
