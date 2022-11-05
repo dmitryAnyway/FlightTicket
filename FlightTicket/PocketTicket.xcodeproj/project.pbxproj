@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68237CEE29150044001714A2 /* flightNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 68237CED29150044001714A2 /* flightNumber.json */; };
+		68237CF2291500BE001714A2 /* FlightApiServiceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68237CF1291500BE001714A2 /* FlightApiServiceFake.swift */; };
+		68237CF429150194001714A2 /* NetworkServiceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68237CF329150194001714A2 /* NetworkServiceFake.swift */; };
+		68A86E4F29164E9E0035BAEC /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A86E4E29164E9E0035BAEC /* NetworkServiceProtocol.swift */; };
+		68A86E5129164F180035BAEC /* UrlComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A86E5029164F180035BAEC /* UrlComponents.swift */; };
 		68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */; };
 		68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D5A290D530E004D7FAB /* FlightNumberView.swift */; };
 		68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1D5C290D5310004D7FAB /* Assets.xcassets */; };
@@ -22,9 +27,15 @@
 		68CA1D9B290DBC1D004D7FAB /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 68CA1D9A290DBC1D004D7FAB /* Swinject */; };
 		68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */; };
 		68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */; };
-		B45001042914372A00E53584 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45001032914372A00E53584 /* Extension + String.swift */; };
-		B450010E29143BCB00E53584 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B450011029143BCB00E53584 /* Localizable.strings */; };
-		B450011329145A2D00E53584 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B450011229145A2D00E53584 /* .gitignore */; };
+		68F42CAB2911A6C30040CEC7 /* String+EmptyLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CAA2911A6C30040CEC7 /* String+EmptyLine.swift */; };
+		68F42CAE2911B7840040CEC7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CAD2911B7840040CEC7 /* NetworkService.swift */; };
+		68F42CB12913D3440040CEC7 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CB02913D3440040CEC7 /* RequestProtocol.swift */; };
+		68F42CB32913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CB22913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift */; };
+		68F42CB629140A810040CEC7 /* FlightApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CB529140A810040CEC7 /* FlightApiService.swift */; };
+		68F42CBA29140CF10040CEC7 /* FlightApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CB929140CF10040CEC7 /* FlightApiServiceProtocol.swift */; };
+		68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */; };
+		68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBE2914136B0040CEC7 /* TicketModel.swift */; };
+		68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CC129144A750040CEC7 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68237CED29150044001714A2 /* flightNumber.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flightNumber.json; sourceTree = "<group>"; };
+		68237CF1291500BE001714A2 /* FlightApiServiceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApiServiceFake.swift; sourceTree = "<group>"; };
+		68237CF329150194001714A2 /* NetworkServiceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFake.swift; sourceTree = "<group>"; };
+		68A86E4E29164E9E0035BAEC /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		68A86E5029164F180035BAEC /* UrlComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlComponents.swift; sourceTree = "<group>"; };
 		68CA1D55290D530E004D7FAB /* PocketTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTicketApp.swift; sourceTree = "<group>"; };
 		68CA1D5A290D530E004D7FAB /* FlightNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberView.swift; sourceTree = "<group>"; };
@@ -61,10 +77,15 @@
 		68CA1D97290DBBFB004D7FAB /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		68CA1D9C290DBDE3004D7FAB /* FlightNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberAssembly.swift; sourceTree = "<group>"; };
 		68CA1D9F290E4B23004D7FAB /* InjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectWrapper.swift; sourceTree = "<group>"; };
-		B45001032914372A00E53584 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
-		B450010F29143BCB00E53584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B450011129143C3600E53584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B450011229145A2D00E53584 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		68F42CAA2911A6C30040CEC7 /* String+EmptyLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyLine.swift"; sourceTree = "<group>"; };
+		68F42CAD2911B7840040CEC7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		68F42CB02913D3440040CEC7 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		68F42CB22913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UrlComponents+Scheme+Host.swift"; sourceTree = "<group>"; };
+		68F42CB529140A810040CEC7 /* FlightApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApiService.swift; sourceTree = "<group>"; };
+		68F42CB929140CF10040CEC7 /* FlightApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApiServiceProtocol.swift; sourceTree = "<group>"; };
+		68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRequestModel.swift; sourceTree = "<group>"; };
+		68F42CBE2914136B0040CEC7 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		68F42CC129144A750040CEC7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +115,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68237CEF2915006F001714A2 /* JsonFakes */ = {
+			isa = PBXGroup;
+			children = (
+				68237CED29150044001714A2 /* flightNumber.json */,
+			);
+			path = JsonFakes;
+			sourceTree = "<group>";
+		};
+		68237CF0291500AB001714A2 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				68237CEF2915006F001714A2 /* JsonFakes */,
+				68237CF1291500BE001714A2 /* FlightApiServiceFake.swift */,
+				68237CF329150194001714A2 /* NetworkServiceFake.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		68A86E4D29164D0D0035BAEC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68A86E54291651CD0035BAEC /* Common */,
+				68CA1D9E290DC666004D7FAB /* Services */,
+				68F42CBB29140E140040CEC7 /* Models */,
+				68F42CC029144A580040CEC7 /* Views */,
+				68A86E5229164FD90035BAEC /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		68A86E5229164FD90035BAEC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		68A86E54291651CD0035BAEC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CAF2913D3290040CEC7 /* Protocols */,
+				68F42CAC2911A7310040CEC7 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		68CA1D4C290D530E004D7FAB = {
 			isa = PBXGroup;
 			children = (
-				B450011229145A2D00E53584 /* .gitignore */,
-				B45001022914369700E53584 /* Localization */,
 				68CA1D57290D530E004D7FAB /* PocketTicket */,
 				68CA1D6D290D5311004D7FAB /* PocketTicketTests */,
 				68CA1D77290D5311004D7FAB /* PocketTicketUITests */,
@@ -121,11 +187,9 @@
 			children = (
 				68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */,
 				68CA1D92290D7D64004D7FAB /* DI */,
-				68CA1D9E290DC666004D7FAB /* Services */,
-				68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */,
-				68CA1D90290D558A004D7FAB /* CoreData */,
+				68237CF0291500AB001714A2 /* Fakes */,
+				68A86E4D29164D0D0035BAEC /* Sources */,
 				68CA1D8F290D5574004D7FAB /* Resources */,
-				68CA1D5E290D5310004D7FAB /* Preview Content */,
 			);
 			path = PocketTicket;
 			sourceTree = "<group>";
@@ -158,18 +222,19 @@
 		68CA1D8F290D5574004D7FAB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				68CA1D5E290D5310004D7FAB /* Preview Content */,
 				68CA1D5C290D5310004D7FAB /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		68CA1D90290D558A004D7FAB /* CoreData */ = {
+		68CA1D90290D558A004D7FAB /* CoreDataService */ = {
 			isa = PBXGroup;
 			children = (
 				68CA1D61290D5310004D7FAB /* Persistence.swift */,
 				68CA1D63290D5310004D7FAB /* PocketTicket.xcdatamodeld */,
 			);
-			path = CoreData;
+			path = CoreDataService;
 			sourceTree = "<group>";
 		};
 		68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */ = {
@@ -194,17 +259,72 @@
 		68CA1D9E290DC666004D7FAB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				68CA1D90290D558A004D7FAB /* CoreDataService */,
+				68F42CB729140A8C0040CEC7 /* FlightApiService */,
+				68F42CB42913D79E0040CEC7 /* NetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		B45001022914369700E53584 /* Localization */ = {
+		68F42CAC2911A7310040CEC7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B45001032914372A00E53584 /* Extension + String.swift */,
-				B450011029143BCB00E53584 /* Localizable.strings */,
+				68F42CAA2911A6C30040CEC7 /* String+EmptyLine.swift */,
+				68F42CB22913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift */,
 			);
-			path = Localization;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68F42CAF2913D3290040CEC7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CB02913D3440040CEC7 /* RequestProtocol.swift */,
+				68F42CB929140CF10040CEC7 /* FlightApiServiceProtocol.swift */,
+				68A86E4E29164E9E0035BAEC /* NetworkServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		68F42CB42913D79E0040CEC7 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CAD2911B7840040CEC7 /* NetworkService.swift */,
+				68A86E5029164F180035BAEC /* UrlComponents.swift */,
+				68F42CB829140C200040CEC7 /* Requests */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		68F42CB729140A8C0040CEC7 /* FlightApiService */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CB529140A810040CEC7 /* FlightApiService.swift */,
+			);
+			path = FlightApiService;
+			sourceTree = "<group>";
+		};
+		68F42CB829140C200040CEC7 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		68F42CBB29140E140040CEC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CBE2914136B0040CEC7 /* TicketModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68F42CC029144A580040CEC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68F42CC129144A750040CEC7 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +417,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
 			);
 			mainGroup = 68CA1D4C290D530E004D7FAB;
 			packageReferences = (
@@ -320,9 +439,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B450011329145A2D00E53584 /* .gitignore in Resources */,
 				68CA1D60290D5310004D7FAB /* Preview Assets.xcassets in Resources */,
-				B450010E29143BCB00E53584 /* Localizable.strings in Resources */,
+				68237CEE29150044001714A2 /* flightNumber.json in Resources */,
 				68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,15 +466,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68237CF2291500BE001714A2 /* FlightApiServiceFake.swift in Sources */,
 				68CA1D98290DBBFB004D7FAB /* DIContainer.swift in Sources */,
+				68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */,
 				68CA1D94290D7ED9004D7FAB /* FlightNumberViewModel.swift in Sources */,
+				68A86E5129164F180035BAEC /* UrlComponents.swift in Sources */,
+				68A86E4F29164E9E0035BAEC /* NetworkServiceProtocol.swift in Sources */,
 				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
+				68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */,
 				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
 				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
-				B45001042914372A00E53584 /* Extension + String.swift in Sources */,
+				68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */,
 				68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */,
+				68F42CB12913D3440040CEC7 /* RequestProtocol.swift in Sources */,
+				68F42CB32913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift in Sources */,
+				68237CF429150194001714A2 /* NetworkServiceFake.swift in Sources */,
+				68F42CBA29140CF10040CEC7 /* FlightApiServiceProtocol.swift in Sources */,
 				68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */,
+				68F42CAB2911A6C30040CEC7 /* String+EmptyLine.swift in Sources */,
+				68F42CB629140A810040CEC7 /* FlightApiService.swift in Sources */,
 				68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */,
+				68F42CAE2911B7840040CEC7 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,24 +522,11 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		B450011029143BCB00E53584 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B450010F29143BCB00E53584 /* en */,
-				B450011129143C3600E53584 /* ru */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		68CA1D7C290D5311004D7FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -471,7 +588,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -530,8 +646,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -543,6 +660,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,8 +676,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PocketTicket/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -571,6 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = DMZ3030.PocketTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

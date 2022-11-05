@@ -6,6 +6,11 @@
 //
 import Swinject
 
+enum Fakes: String {
+    case networkService = "NetworkServiceProtocol"
+    case flightService = "FlightApiServiceProtocol"
+}
+
 class DIContainer {
     
     static let shared = DIContainer()
@@ -15,13 +20,30 @@ class DIContainer {
         container.register(FlightNumberAssemblyProtocol.self) { _ in
             FlightNumberAssembly()
         }
-        // Network service
-        // следующий скорее всего будет Network service
+        // Services
+        container.register(NetworkServiceProtocol.self) { _ in
+            NetworkService()
+        }
+        container.register(FlightApiServiceProtocol.self) { _ in
+            FlightApiService(networkService: DIContainer.shared.resolve(NetworkServiceProtocol.self))
+        }
+        // Fakes
+        container.register(NetworkServiceProtocol.self, name: Fakes.networkService.rawValue) { _ in
+            NetworkServiceFake()
+        }
+        container.register(FlightApiServiceProtocol.self, name: Fakes.flightService.rawValue) { _ in
+            FlightApiServiceFake(networkService: DIContainer.shared.resolveWith(name: Fakes.networkService.rawValue, NetworkServiceProtocol.self)!)
+        }
     }
     
-    func resolve<T>(_ type: T.Type ) -> T {
-        container.resolve(T.self )!
+    func resolve<T>(_ type: T.Type) -> T {
+        container.resolve(T.self)!
     }
+                                 
+    func resolveWith<T>(name: String, _ type: T.Type) -> T? {
+        container.resolve(T.self, name: name)
+    }
+
     
     private init() {}
 }
