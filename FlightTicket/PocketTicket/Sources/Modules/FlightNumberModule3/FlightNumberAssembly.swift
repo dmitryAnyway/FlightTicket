@@ -16,6 +16,7 @@ protocol FlightNumberAssemblyProtocol {
 final class FlightNumberAssembly: FlightNumberAssemblyProtocol {
     func assemble() -> FlightNumberViewModel {
         // тут собираем вью модель
-        return FlightNumberViewModel()
+        @Inject var flightService: FlightApiServiceProtocol
+        return FlightNumberViewModel(flightService: flightService)
     }
 }
