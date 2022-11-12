@@ -36,6 +36,8 @@
 		68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */; };
 		68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBE2914136B0040CEC7 /* TicketModel.swift */; };
 		68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CC129144A750040CEC7 /* LoadingView.swift */; };
+		FFA2600D291D013500CB7205 /* FlightNumberModule2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */; };
+		FFA2600F291D014C00CB7205 /* FlightNumberModule2LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRequestModel.swift; sourceTree = "<group>"; };
 		68F42CBE2914136B0040CEC7 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		68F42CC129144A750040CEC7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2View.swift; sourceTree = "<group>"; };
+		FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		68A86E5229164FD90035BAEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FFA2600B291D011400CB7205 /* FlightNumberModule2 */,
 				68CA1D91290D7D49004D7FAB /* FlightNumberModule3 */,
 			);
 			path = Modules;
@@ -327,6 +332,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FFA2600B291D011400CB7205 /* FlightNumberModule2 */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */,
+				FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */,
+			);
+			path = FlightNumberModule2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +482,7 @@
 			files = (
 				68237CF2291500BE001714A2 /* FlightApiServiceFake.swift in Sources */,
 				68CA1D98290DBBFB004D7FAB /* DIContainer.swift in Sources */,
+				FFA2600D291D013500CB7205 /* FlightNumberModule2View.swift in Sources */,
 				68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */,
 				68CA1D94290D7ED9004D7FAB /* FlightNumberViewModel.swift in Sources */,
 				68A86E5129164F180035BAEC /* UrlComponents.swift in Sources */,
@@ -483,6 +498,7 @@
 				68237CF429150194001714A2 /* NetworkServiceFake.swift in Sources */,
 				68F42CBA29140CF10040CEC7 /* FlightApiServiceProtocol.swift in Sources */,
 				68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */,
+				FFA2600F291D014C00CB7205 /* FlightNumberModule2LocationManager.swift in Sources */,
 				68F42CAB2911A6C30040CEC7 /* String+EmptyLine.swift in Sources */,
 				68F42CB629140A810040CEC7 /* FlightApiService.swift in Sources */,
 				68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */,
@@ -650,6 +666,7 @@
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -680,6 +697,7 @@
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

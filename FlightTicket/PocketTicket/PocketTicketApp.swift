@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct PocketTicketApp: App {
     @Inject private var flightNumberAssembly: FlightNumberAssemblyProtocol
+    @State var toggle = true
     
     var body: some Scene {
         WindowGroup {
-            FlightNumberView(viewModel: flightNumberAssembly.assemble())
+            
+            OnboardingView(shouldShowOnBoarding: $toggle)
         }
     }
 }
