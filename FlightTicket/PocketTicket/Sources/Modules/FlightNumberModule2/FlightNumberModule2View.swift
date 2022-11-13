@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlightNumberModule2View: View {
     
-    @AppStorage("_shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
+    @AppStorage("shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
     @ObservedObject var goToModel3: FlightNumberViewModel
     
     var body: some View {
@@ -20,22 +20,19 @@ struct FlightNumberModule2View: View {
             }
             .navigationTitle("Home")
         }
-        .fullScreenCover(isPresented: $shouldShowOnBoarding) {
-            OnboardingView(shouldShowOnBoarding: $shouldShowOnBoarding, areYouGoingToSecondView: false, goToModel3: goToModel3)
-        }
     }
 }
 
 // OnBoarding - TabView
 struct OnboardingView: View {
     
-    @Binding var shouldShowOnBoarding: Bool
+    @AppStorage("shouldShowOnBoarding123") var shouldShowOnBoarding: Bool = true
     @State private var selectedTab: Int = 0
-    @State var areYouGoingToSecondView: Bool // Step 2
+    @State var areYouGoingToSecondView: Bool
     @ObservedObject var goToModel3: FlightNumberViewModel
     
     var body: some View {
-        NavigationView{ // Step 1
+        NavigationView{
             TabView (selection: $selectedTab) {
                 // Страница 1
                 ZStack{
@@ -151,14 +148,13 @@ struct OnboardingView: View {
                         Spacer()
                         
                         VStack {
-                            // Step 3
-                            NavigationLink(destination: FlightNumberView(viewModel: goToModel3 ), isActive: $areYouGoingToSecondView) { EmptyView() }
+                            NavigationLink(destination: FlightNumberView(viewModel: goToModel3 ).navigationBarBackButtonHidden(), isActive: $areYouGoingToSecondView) { EmptyView() }
                             // реализовать через NavigationLink
                             let showsDismissButton: Bool = true
                             if showsDismissButton {
                                 Button {
-                                    self.areYouGoingToSecondView = true // Step 4
                                     shouldShowOnBoarding.toggle()
+                                    self.areYouGoingToSecondView = true
                                     
                                 } label: {
                                     Text("Get Started")
@@ -183,16 +179,4 @@ struct OnboardingView: View {
             }
         }
     }
-    }
-    
-    
-    
-    //
-    //struct ContentView_Previews: PreviewProvider {
-    //    static var previews: some View {
-    //        FlightNumberModule2View()
-    //    }
-    //}
-    //
-    
-
+}
