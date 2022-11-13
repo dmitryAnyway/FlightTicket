@@ -36,6 +36,7 @@
 		68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */; };
 		68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBE2914136B0040CEC7 /* TicketModel.swift */; };
 		68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CC129144A750040CEC7 /* LoadingView.swift */; };
+		FF59393429217AFE00DA5A91 /* FlightNumberModule2Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59393329217AFE00DA5A91 /* FlightNumberModule2Assembler.swift */; };
 		FFA2600D291D013500CB7205 /* FlightNumberModule2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */; };
 		FFA2600F291D014C00CB7205 /* FlightNumberModule2LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRequestModel.swift; sourceTree = "<group>"; };
 		68F42CBE2914136B0040CEC7 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		68F42CC129144A750040CEC7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FF59393329217AFE00DA5A91 /* FlightNumberModule2Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2Assembler.swift; sourceTree = "<group>"; };
 		FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2View.swift; sourceTree = "<group>"; };
 		FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,6 +339,7 @@
 			children = (
 				FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */,
 				FFA2600E291D014C00CB7205 /* FlightNumberModule2LocationManager.swift */,
+				FF59393329217AFE00DA5A91 /* FlightNumberModule2Assembler.swift */,
 			);
 			path = FlightNumberModule2;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
 				68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */,
 				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
+				FF59393429217AFE00DA5A91 /* FlightNumberModule2Assembler.swift in Sources */,
 				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
 				68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */,
 				68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */,
