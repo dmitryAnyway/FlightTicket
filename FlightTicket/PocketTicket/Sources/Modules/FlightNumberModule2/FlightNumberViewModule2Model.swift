@@ -4,13 +4,13 @@
 //
 //  Created by Vasiliy on 10.11.2022.
 //
-
 import CoreLocation
 
-class LocationManager: NSObject, ObservableObject {
+
+class FlightNumberViewModule2Model: NSObject, ObservableObject {
     private let manager = CLLocationManager()
     @Published var userLocation: CLLocation?
-    static let shared = LocationManager()
+    static let shared = FlightNumberViewModule2Model()
     
     override init() {
         super.init()
@@ -24,21 +24,19 @@ class LocationManager: NSObject, ObservableObject {
     }
 }
 
-extension LocationManager: CLLocationManagerDelegate {
+extension FlightNumberViewModule2Model: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .notDetermined:
             print("DEBUG: Not determined")
         case .restricted:
-            print("DEBUG: Not determined")
+            print("DEBUG: Restricted")
         case .denied:
-            print("DEBUG: Not determined")
+            print("DEBUG: Denied")
         case .authorizedAlways:
-            print("DEBUG: Not determined")
+            print("DEBUG: Auth always")
         case .authorizedWhenInUse:
-            print("DEBUG: Not determined")
-        case .authorized:
-            print("DEBUG: Not determined")
+            print("DEBUG: Auth when in use")
         @unknown default:
             break
         }
