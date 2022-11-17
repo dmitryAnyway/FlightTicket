@@ -42,12 +42,12 @@ struct FlightView: View {
         return NavigationView {
             VStack {
                 VStack {
-                    Text("Номер рейса")
+                    Text("Flight number")
                         .font(.title)
-                    TextField("Например: АE 3106", text: $viewModel.flightNumber)
+                    TextField("For instance: АE 3106", text: $viewModel.flightNumber)
                         .padding(.horizontal)
                         .textFieldStyle(.roundedBorder)
-                    Text("По номеру рейса мы можем показать вам подробную информацию")
+                    Text("By flight number we can show you detailed information")
                         .font(.caption2)
                         .foregroundColor(.gray)
                 }.padding(.vertical, paddingFromTop)
@@ -55,7 +55,7 @@ struct FlightView: View {
                 Button(action: {
                     viewModel.findFlight()
                 }) {
-                    Text("Найти")
+                    Text("Go")
                     // Тут переходим на следующее вью
                     NavigationLink(isActive: navigateForward) {
                         Text("\(viewModel.ticketInfo?.request?.client?.geo?.continent ?? "")\n\(viewModel.ticketInfo?.request?.client?.geo?.country ?? "")")

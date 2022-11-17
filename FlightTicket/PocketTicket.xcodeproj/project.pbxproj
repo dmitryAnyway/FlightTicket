@@ -36,6 +36,12 @@
 		68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */; };
 		68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBE2914136B0040CEC7 /* TicketModel.swift */; };
 		68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CC129144A750040CEC7 /* LoadingView.swift */; };
+		B4DB9C5229263F7F00C1BD8D /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB9C4F29263F7F00C1BD8D /* Extension + String.swift */; };
+		B4DB9C5329263F7F00C1BD8D /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB9C4F29263F7F00C1BD8D /* Extension + String.swift */; };
+		B4DB9C5429263F7F00C1BD8D /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DB9C4F29263F7F00C1BD8D /* Extension + String.swift */; };
+		B4DB9C5529263F7F00C1BD8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4DB9C5029263F7F00C1BD8D /* Localizable.strings */; };
+		B4DB9C5629263F7F00C1BD8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4DB9C5029263F7F00C1BD8D /* Localizable.strings */; };
+		B4DB9C5729263F7F00C1BD8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4DB9C5029263F7F00C1BD8D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,9 @@
 		68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRequestModel.swift; sourceTree = "<group>"; };
 		68F42CBE2914136B0040CEC7 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		68F42CC129144A750040CEC7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B4DB9C4F29263F7F00C1BD8D /* Extension + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		B4DB9C5129263F7F00C1BD8D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B4DB9C5829263FB100C1BD8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +145,10 @@
 		68A86E4D29164D0D0035BAEC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */,
+				B4DB9C4E29263F7F00C1BD8D /* Localization */,
+				68CA1D92290D7D64004D7FAB /* DI */,
+				68237CF0291500AB001714A2 /* Fakes */,
 				68A86E54291651CD0035BAEC /* Common */,
 				68CA1D9E290DC666004D7FAB /* Services */,
 				68F42CBB29140E140040CEC7 /* Models */,
@@ -185,9 +198,6 @@
 		68CA1D57290D530E004D7FAB /* PocketTicket */ = {
 			isa = PBXGroup;
 			children = (
-				68CA1D58290D530E004D7FAB /* PocketTicketApp.swift */,
-				68CA1D92290D7D64004D7FAB /* DI */,
-				68237CF0291500AB001714A2 /* Fakes */,
 				68A86E4D29164D0D0035BAEC /* Sources */,
 				68CA1D8F290D5574004D7FAB /* Resources */,
 			);
@@ -327,6 +337,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B4DB9C4E29263F7F00C1BD8D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B4DB9C4F29263F7F00C1BD8D /* Extension + String.swift */,
+				B4DB9C5029263F7F00C1BD8D /* Localizable.strings */,
+			);
+			name = Localization;
+			path = ../../../../Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +437,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 68CA1D4C290D530E004D7FAB;
 			packageReferences = (
@@ -440,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CA1D60290D5310004D7FAB /* Preview Assets.xcassets in Resources */,
+				B4DB9C5529263F7F00C1BD8D /* Localizable.strings in Resources */,
 				68237CEE29150044001714A2 /* flightNumber.json in Resources */,
 				68CA1D5D290D5310004D7FAB /* Assets.xcassets in Resources */,
 			);
@@ -449,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DB9C5629263F7F00C1BD8D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DB9C5729263F7F00C1BD8D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +498,7 @@
 				68A86E4F29164E9E0035BAEC /* NetworkServiceProtocol.swift in Sources */,
 				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
 				68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */,
+				B4DB9C5229263F7F00C1BD8D /* Extension + String.swift in Sources */,
 				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
 				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
 				68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */,
@@ -494,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DB9C5329263F7F00C1BD8D /* Extension + String.swift in Sources */,
 				68CA1D6F290D5311004D7FAB /* PocketTicketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CA1D7B290D5311004D7FAB /* PocketTicketUITestsLaunchTests.swift in Sources */,
+				B4DB9C5429263F7F00C1BD8D /* Extension + String.swift in Sources */,
 				68CA1D79290D5311004D7FAB /* PocketTicketUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +548,18 @@
 			targetProxy = 68CA1D75290D5311004D7FAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4DB9C5029263F7F00C1BD8D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4DB9C5129263F7F00C1BD8D /* ru */,
+				B4DB9C5829263FB100C1BD8D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		68CA1D7C290D5311004D7FAB /* Debug */ = {
@@ -801,7 +840,7 @@
 				68CA1D7D290D5311004D7FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		68CA1D7E290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicket" */ = {
 			isa = XCConfigurationList;
@@ -810,7 +849,7 @@
 				68CA1D80290D5311004D7FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		68CA1D81290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketTests" */ = {
 			isa = XCConfigurationList;
@@ -819,7 +858,7 @@
 				68CA1D83290D5311004D7FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		68CA1D84290D5311004D7FAB /* Build configuration list for PBXNativeTarget "PocketTicketUITests" */ = {
 			isa = XCConfigurationList;
@@ -828,7 +867,7 @@
 				68CA1D86290D5311004D7FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
