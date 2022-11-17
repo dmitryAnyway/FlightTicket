@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  PocketTicket
+
+  Created by Андрей Русин on 03.11.2022.
+  
+*/
+
+//MARK: -  1 модуль
+
+"Are you afraid to fly?" = "А вы боитесь летать?";
+
+"We will help you not to be late for the flight, we will show the most important information on the departure. We will notify you if the flight time changes" = "Поможем вам не опоздать най рейс, покажем самую важную информацию по вылету. Предупредим, если время рейса изменится";
+
+"OK" = "Хорошо";
+
+//MARK: -  3 модуль
+
+"Flight number" = "Номер рейса";
+
+"By flight number we can show you detailed information" = "По номеру рейса мы можем показать вам подробную информацию";
+
+"For instance: АE 3106" = "Например: АE 3106";
+
+"Go" = "Найти";
+
+//MARK: -  4 модуль
+
+"Search" = "Поиск";
+
+"Flight" = "Рейс";
+
+"Start of boarding in" = "Начало посадки через";
+
+"Registration will complete in" = "Завершение регистрации через";
+
+"Delayed by" = "Задержка на";
+
+"Hour" = "Час";
+
+"Hours" = "Часов";
+
+"Gate" = "Выход";
+
+"Transfer" = "Пересадка";
+
+"To the city" = "До города";
+
+"Minutes" = "Минут";
+
+"Find out interesting places" = "Узнайте интересные места";
+
+"Main" = "Главная";
+
+"Route" = "Маршрут";
+
+"Map" = "Карта";
+
+"Profile" = "Профиль";
+
+//MARK: -  6 модуль
+
+"Your route" = "Ваш маршрут";
+
+"Airport" = "Аэропорт";
+
+"Virtual tour" = "Виртуальный тур";
+
+"Add event" = "Добавить событие";
+
+//MARK: -  10 модуль
+
+"My profile" = "Мой профиль";
+
+"Edit profile" = "Редактировать профиль";
+
+"Routes was tracked" = "Маршрута было отслежено";
+
+"Transfers done" = "Пересадки завершено";
+
+//MARK: -  11 модуль
+
+"Get notification in" = "Получить уведомление за";
+
+"Add reminder" = "Добавить напоминание";
