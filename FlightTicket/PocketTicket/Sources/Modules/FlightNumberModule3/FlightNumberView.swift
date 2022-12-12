@@ -24,6 +24,7 @@ struct FlightNumberView: View {
 struct FlightView: View {
     @StateObject var viewModel: FlightNumberViewModel
     @Binding var paddingFromTop: CGFloat
+    @AppStorage("shouldShowOnBoarding") var shouldShowOnBoarding: Bool = false
     
     var body: some View {
         let showError = Binding<Bool>(
@@ -71,6 +72,9 @@ struct FlightView: View {
                 }
             }
             .hiddenNavigationBarStyle()
+            .onAppear { // переключает показ 1 раз
+                shouldShowOnBoarding = false
+            }
         }
     }
 }

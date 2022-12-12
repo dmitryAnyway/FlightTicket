@@ -1,16 +1,18 @@
 //
-//  FlightNumberModule2LocationManager.swift
+//  FlightNumberWelcomeModel.swift
 //  PocketTicket
 //
-//  Created by Vasiliy on 10.11.2022.
+//  Created by Vasiliy on 06.12.2022.
 //
+
+import Foundation
 import CoreLocation
 
+    // Тут описан вызов запроса геолокации
 
-class FlightNumberViewModule2Model: NSObject, ObservableObject {
+class FlightNumberWelcomeModel: NSObject, ObservableObject {
     private let manager = CLLocationManager()
     @Published var userLocation: CLLocation?
-    static let shared = FlightNumberViewModule2Model()
     
     override init() {
         super.init()
@@ -24,22 +26,9 @@ class FlightNumberViewModule2Model: NSObject, ObservableObject {
     }
 }
 
-extension FlightNumberViewModule2Model: CLLocationManagerDelegate {
+extension FlightNumberWelcomeModel: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .notDetermined:
-            print("DEBUG: Not determined")
-        case .restricted:
-            print("DEBUG: Restricted")
-        case .denied:
-            print("DEBUG: Denied")
-        case .authorizedAlways:
-            print("DEBUG: Auth always")
-        case .authorizedWhenInUse:
-            print("DEBUG: Auth when in use")
-        @unknown default:
-            break
-        }
+
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
@@ -47,4 +36,3 @@ extension FlightNumberViewModule2Model: CLLocationManagerDelegate {
     }
     
 }
-

@@ -36,8 +36,9 @@
 		68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */; };
 		68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CBE2914136B0040CEC7 /* TicketModel.swift */; };
 		68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F42CC129144A750040CEC7 /* LoadingView.swift */; };
-		FFA2600D291D013500CB7205 /* FlightNumberModule2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */; };
-		FFA2600F291D014C00CB7205 /* FlightNumberViewModule2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2600E291D014C00CB7205 /* FlightNumberViewModule2Model.swift */; };
+		FF52D839293F5BA300FB731A /* FlightNumberWelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52D838293F5BA300FB731A /* FlightNumberWelcomeModel.swift */; };
+		FF52D83B293F5BC000FB731A /* FlightNumberWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52D83A293F5BC000FB731A /* FlightNumberWelcomeView.swift */; };
+		FF52D83D293F5BDD00FB731A /* FlightNumberWelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52D83C293F5BDD00FB731A /* FlightNumberWelcomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +89,9 @@
 		68F42CBC29140E500040CEC7 /* TicketRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRequestModel.swift; sourceTree = "<group>"; };
 		68F42CBE2914136B0040CEC7 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		68F42CC129144A750040CEC7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberModule2View.swift; sourceTree = "<group>"; };
-		FFA2600E291D014C00CB7205 /* FlightNumberViewModule2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberViewModule2Model.swift; sourceTree = "<group>"; };
+		FF52D838293F5BA300FB731A /* FlightNumberWelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberWelcomeModel.swift; sourceTree = "<group>"; };
+		FF52D83A293F5BC000FB731A /* FlightNumberWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberWelcomeView.swift; sourceTree = "<group>"; };
+		FF52D83C293F5BDD00FB731A /* FlightNumberWelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNumberWelcomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,8 +337,9 @@
 		FFA2600B291D011400CB7205 /* FlightNumberModule2 */ = {
 			isa = PBXGroup;
 			children = (
-				FFA2600C291D013500CB7205 /* FlightNumberModule2View.swift */,
-				FFA2600E291D014C00CB7205 /* FlightNumberViewModule2Model.swift */,
+				FF52D838293F5BA300FB731A /* FlightNumberWelcomeModel.swift */,
+				FF52D83A293F5BC000FB731A /* FlightNumberWelcomeView.swift */,
+				FF52D83C293F5BDD00FB731A /* FlightNumberWelcomeViewModel.swift */,
 			);
 			path = FlightNumberModule2;
 			sourceTree = "<group>";
@@ -482,23 +485,24 @@
 			files = (
 				68237CF2291500BE001714A2 /* FlightApiServiceFake.swift in Sources */,
 				68CA1D98290DBBFB004D7FAB /* DIContainer.swift in Sources */,
-				FFA2600D291D013500CB7205 /* FlightNumberModule2View.swift in Sources */,
 				68F42CBF2914136B0040CEC7 /* TicketModel.swift in Sources */,
 				68CA1D94290D7ED9004D7FAB /* FlightNumberViewModel.swift in Sources */,
+				FF52D839293F5BA300FB731A /* FlightNumberWelcomeModel.swift in Sources */,
 				68A86E5129164F180035BAEC /* UrlComponents.swift in Sources */,
 				68A86E4F29164E9E0035BAEC /* NetworkServiceProtocol.swift in Sources */,
 				68CA1DA0290E4B23004D7FAB /* InjectWrapper.swift in Sources */,
+				FF52D83B293F5BC000FB731A /* FlightNumberWelcomeView.swift in Sources */,
 				68F42CC229144A760040CEC7 /* LoadingView.swift in Sources */,
 				68CA1D62290D5310004D7FAB /* Persistence.swift in Sources */,
 				68CA1D5B290D530E004D7FAB /* FlightNumberView.swift in Sources */,
 				68F42CBD29140E500040CEC7 /* TicketRequestModel.swift in Sources */,
 				68CA1D9D290DBDE3004D7FAB /* FlightNumberAssembly.swift in Sources */,
 				68F42CB12913D3440040CEC7 /* RequestProtocol.swift in Sources */,
+				FF52D83D293F5BDD00FB731A /* FlightNumberWelcomeViewModel.swift in Sources */,
 				68F42CB32913D3CC0040CEC7 /* UrlComponents+Scheme+Host.swift in Sources */,
 				68237CF429150194001714A2 /* NetworkServiceFake.swift in Sources */,
 				68F42CBA29140CF10040CEC7 /* FlightApiServiceProtocol.swift in Sources */,
 				68CA1D59290D530E004D7FAB /* PocketTicketApp.swift in Sources */,
-				FFA2600F291D014C00CB7205 /* FlightNumberViewModule2Model.swift in Sources */,
 				68F42CAB2911A6C30040CEC7 /* String+EmptyLine.swift in Sources */,
 				68F42CB629140A810040CEC7 /* FlightApiService.swift in Sources */,
 				68CA1D65290D5310004D7FAB /* PocketTicket.xcdatamodeld in Sources */,
