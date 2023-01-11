@@ -10,10 +10,16 @@ import SwiftUI
 @main
 struct PocketTicketApp: App {
     @Inject private var flightNumberAssembly: FlightNumberAssemblyProtocol
+    @AppStorage("shouldShowOnBoarding") var shouldShowOnBoarding: Bool = true
     
     var body: some Scene {
         WindowGroup {
+            
+            if shouldShowOnBoarding {
+                FlightNumberWelcomeViewModel()
+            } else {
             FlightNumberView(viewModel: flightNumberAssembly.assemble())
+            }
         }
     }
 }
